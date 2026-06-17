@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    android:padding="0dp">
+
+    <!-- Background IMAGE (centerCrop, tidak gepeng) -->
+    <ImageView
+        android:id="@+id/bgImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg_sdk_checkout"
+        android:adjustViewBounds="true" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:paddingHorizontal="10dp">
+
+        <!-- Nama promo -->
+        <TextView
+            android:id="@+id/tvPromoTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Promo Merdeka 20.20"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <!-- Tombol Apply -->
+        <TextView
+            android:id="@+id/btnApply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apply"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:background="@drawable/bg_apply_button" />
+    </LinearLayout>
+    <!-- Content Card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:layout_marginTop="30dp">
+
+        <!-- Nama promo -->
+
+
+        <!-- Deskripsi -->
+        <TextView
+            android:id="@+id/tvPromoDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Applicable on VA All Bank and Credit Card"
+            android:fontFamily="@font/din_next_lt_pro"
+            android:textSize="13sp"
+            android:textColor="#666666"
+            android:layout_marginTop="4dp" />
+
+        <!-- Badge -->
+        <TextView
+            android:id="@+id/tvPromoBadge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IDR 150.000"
+            android:fontFamily="@font/din_next_lt_pro"
+            android:textSize="12sp"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="4dp"
+            android:background="@drawable/bg_badge_green"
+            android:textColor="#008681"
+            android:layout_marginTop="6dp" />
+
+        <!-- Bottom row -->
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/line_divider"
+            android:layerType="software" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <!-- Code -->
+            <!-- Code label + value + icon -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_weight="1">
+
+                <!-- Label Code -->
+                <TextView
+                    android:id="@+id/tvCodeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Code "
+                    android:fontFamily="@font/din_next_lt_pro"
+                    android:textSize="12sp"
+                    android:textColor="#444444" />
+
+                <!-- Value -->
+                <TextView
+                    android:id="@+id/tvCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PRT1253"
+                    android:fontFamily="@font/din_next_lt_pro"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="#444444" />
+
+                <!-- Icon Copy -->
+                <ImageView
+                    android:id="@+id/ivCopy"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/ic_copy"
+                    android:layout_marginStart="6dp" />
+            </LinearLayout>
+
+
+            <!-- Expiry -->
+            <TextView
+                android:id="@+id/tvExpiry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expiry 17 Aug 2025"
+                android:fontFamily="@font/din_next_lt_pro"
+                android:textSize="12sp"
+                android:textColor="#777777"
+                android:layout_marginEnd="12dp" />
+
+            <!-- Tombol Apply -->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

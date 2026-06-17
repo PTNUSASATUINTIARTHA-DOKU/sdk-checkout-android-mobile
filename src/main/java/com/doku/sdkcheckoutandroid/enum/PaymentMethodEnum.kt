@@ -1,0 +1,5 @@
+package com.doku.sdkcheckoutandroid.enum
+
+enum class PaymentMethodEnum {
+    QRIS, BANK_TRANSFER, CONVENIENCE_STORE, DANA, SHOPEE_PAY, OVO, LINK_AJA, DOKU, CREDIT_CARD, DOKU_NAVIGATE, OVO_NAVIGATE, LINK_AJA_NAVIGATE, NONE
+}

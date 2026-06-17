@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingVertical="16dp"
+    android:paddingHorizontal="12dp"
+    android:clickable="false"
+    android:focusable="false"
+    android:id="@+id/cardItemBackground"
+    android:background="?android:attr/selectableItemBackground">
+
+    <ImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@drawable/ic_payment" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="10dp"
+        android:text="Payment Name"
+        android:fontFamily="@font/din_next_lt_pro"
+        android:textSize="14sp"
+        android:textColor="#2C333C" />
+
+    <ImageView
+        android:id="@+id/removeIcon"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/ic_trash"
+        android:visibility="visible"
+        app:tint="#9E9E9E" />
+
+    <ImageView
+        android:id="@+id/checked"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:visibility="visible"
+        android:src="@drawable/ic_check_circle" />
+
+</LinearLayout>

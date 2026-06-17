@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.card.CreditFormFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Label -->
+            <TextView
+                android:id="@+id/tvCardNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Credit/Debit Number"
+                android:fontFamily="@font/din_next_lt_pro"
+                android:textSize="14sp"
+                android:textColor="#2C333C"
+                android:layout_marginBottom="8dp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp">
+
+                <!-- Input -->
+                <EditText
+                    android:id="@+id/etCardNumber"
+                    android:maxLength="23"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="Insert credit or debit card number"
+                    android:inputType="phone"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="64dp"
+                    android:textSize="14sp"
+                    android:background="@drawable/bg_edit_text"
+                    android:textColor="#000000"/>
+
+                <ImageView
+                    android:id="@+id/ivCardBrand"
+                    android:layout_width="48dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginEnd="12dp"
+                    android:visibility="gone"
+                    android:contentDescription="Card brand logo" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <!-- Label -->
+                <TextView
+                    android:id="@+id/tvExpiry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Expiry Date"
+                    android:fontFamily="@font/din_next_lt_pro"
+                    android:textSize="14sp"
+                    android:textColor="#2C333C"
+                    android:layout_marginBottom="8dp" />
+
+                <!-- Input -->
+                <EditText
+                    android:id="@+id/etExpiry"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="mm/yy"
+                    android:inputType="phone"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:textSize="14sp"
+                    android:background="@drawable/bg_edit_text"
+                    android:textColor="#000000"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="16dp"
+                android:layout_height="1dp"/>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- Label -->
+                    <TextView
+                        android:id="@+id/tvCvv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CVV"
+                        android:fontFamily="@font/din_next_lt_pro"
+                        android:textSize="14sp"
+                        android:textColor="#2C333C"
+                        android:layout_marginBottom="8dp" />
+
+                    <ImageView
+                        android:id="@+id/ivInfoCvv"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginLeft="4dp"
+                        android:src="@drawable/ic_info_black"/>
+
+                </LinearLayout>
+
+                <!-- Input -->
+                <EditText
+                    android:id="@+id/etCvv"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="i.e. 123"
+                    android:inputType="phone"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:textSize="14sp"
+                    android:maxLength="4"
+                    android:background="@drawable/bg_edit_text"
+                    android:textColor="#000000"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Save Card -->
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="16dp">
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/cbSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:paddingLeft="4dp"
+                android:button="@drawable/checkbox_selector"
+                android:text="Save card details"/>
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:id="@+id/layoutInstallment"
+            android:orientation="vertical">
+
+            <!-- Label -->
+            <TextView
+                android:id="@+id/tvInstallment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Installment Plan"
+                android:fontFamily="@font/din_next_lt_pro"
+                android:textSize="18sp"
+                android:textColor="#2C333C"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDesc"
+                android:text="Available Installment Plan will be listed here"
+                android:textSize="14sp"
+                android:fontFamily="@font/din_next_lt_pro"
+                android:textColor="#2C333C"
+                android:layout_marginBottom="8dp" />
+
+            <LinearLayout
+                android:id="@+id/dropdownAnchor"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="12dp"
+                android:background="@drawable/bg_dropdown"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:id="@+id/tvSelectedTenor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Select tenor"
+                    android:fontFamily="@font/din_next_lt_pro"
+                    android:textSize="14sp"
+                    android:textColor="#ABB4C0"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_select"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

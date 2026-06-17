@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="12dp"
+    android:paddingBottom="8dp">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="16dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvPromoTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Available Promos"
+            android:fontFamily="@font/din_next_lt_pro"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/btnClosePromo"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_close"
+            android:tint="#808080" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="#E0E0E0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="16dp">
+        <EditText
+            android:id="@+id/etSearchPromo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search promo name"
+            android:padding="8dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_search"
+            android:drawableEnd="@drawable/ic_search_16"
+            android:drawablePadding="8dp"
+            android:inputType="text"
+            android:imeOptions="actionSearch"
+            android:textColor="#000000"
+            android:textColorHint="#888888"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/promoListContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp" />
+
+
+    <LinearLayout
+        android:id="@+id/emptyStateContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="168dp"
+            android:layout_height="146dp"
+            android:src="@drawable/not_found"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Promo not found"
+            android:textColor="#2C333C"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginTop="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/din_next_lt_pro"
+            android:text="Search promo other keyword"
+            android:textColor="#2C333C"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Powered by"
+            android:fontFamily="@font/din_next_lt_pro"
+            android:textSize="12sp"
+            android:textColor="#757575" />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_doku_logo" />
+    </LinearLayout>
+
+</LinearLayout>

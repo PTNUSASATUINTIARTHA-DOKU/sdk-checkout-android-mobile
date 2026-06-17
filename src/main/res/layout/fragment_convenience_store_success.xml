@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    tools:context=".ui.convenienceStore.ConvenienceStoreSuccessFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Card Background -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/bg_how_to_pay">
+
+            <!-- NMID -->
+            <TextView
+                android:id="@+id/tvNmid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:text="Show to the Cashier"
+                android:fontFamily="@font/din_next_lt_pro"
+                android:textColor="#69707A"
+                android:textFontWeight="400"
+                android:textSize="14sp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="8dp">
+                <!-- Bar Code Image -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="16dp"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/ivBarCode"
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="generatedQris"/>
+
+                    <TextView
+                        android:id="@+id/tvPaymentCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center_horizontal"
+                        android:text="-"
+                        android:fontFamily="@font/din_next_lt_pro"
+                        android:textStyle="bold"
+                        android:textColor="#2C333C"
+                        android:textFontWeight="700"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:id="@+id/tvName"
+                android:text="Code Number"
+                android:fontFamily="@font/din_next_lt_pro"
+                android:textColor="#69707A"
+                android:textSize="14sp"
+                android:textFontWeight="400"
+                android:layout_marginBottom="4dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:background="@drawable/bg_with_stroke">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:id="@+id/logoBank"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="8dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/din_next_lt_pro"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_weight="2"
+                    android:textFontWeight="700"
+                    android:layout_marginEnd="8dp"
+                    android:textColor="#000000"
+                    android:id="@+id/tvNumber"
+                    android:text="-"/>
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_copy"
+                    android:id="@+id/ivCopy"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_marginTop="12dp"
+                android:text="Amount to Pay"
+                android:fontFamily="@font/din_next_lt_pro"
+                android:textSize="14sp"
+                android:textColor="#69707A"
+                android:textFontWeight="400"
+                android:layout_marginBottom="4dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:background="@drawable/bg_with_stroke">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/din_next_lt_pro"
+                    android:textStyle="bold"
+                    android:layout_weight="2"
+                    android:textFontWeight="700"
+                    android:layout_marginEnd="8dp"
+                    android:textColor="#000000"
+                    android:id="@+id/tvAmount"
+                    android:text="IDR -"/>
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_copy"
+                    android:id="@+id/ivCopyAmount"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:textSize="14sp"
+                android:fontFamily="@font/din_next_lt_pro"
+                android:textColor="#69707A"
+                android:textFontWeight="400"
+                android:layout_marginTop="12dp"
+                android:text="Pay Before"/>
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/din_next_lt_pro"
+                android:gravity="start"
+                android:text="TEST"
+                android:textColor="#3F464F"
+                android:textFontWeight="600"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutHowToPay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp">
+
+            <LinearLayout
+                android:id="@+id/btnToggleHowTo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_how_to_pay"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="How To Pay"
+                    android:textColor="#2C333C"
+                    android:fontFamily="@font/din_next_lt_pro"
+                    android:textFontWeight="600"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/icChevron"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_chevron_down" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Change Payment Method -->
+        <TextView
+            android:id="@+id/btnChangePaymentMethod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Payment Method"
+            android:textColor="#E1251B"
+            android:fontFamily="@font/din_next_lt_pro"
+            android:textFontWeight="500"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginVertical="16dp" />
+
+    </LinearLayout>
+
+</ScrollView>

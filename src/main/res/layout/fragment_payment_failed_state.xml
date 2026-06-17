@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.paymentState.PaymentFailedStateFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingVertical="20dp">
+
+        <!-- Drag Handle -->
+        <View
+            android:layout_width="40dp"
+            android:layout_height="4dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Success Icon -->
+        <ImageView
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_failed"/>
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/din_next_lt_pro"
+            android:text="Payment Failed"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#212832" />
+
+        <!-- SubTitle -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/din_next_lt_pro"
+            android:gravity="center"
+            android:text="Your payment is failed. Please retry or contact your Merchant."
+            android:textSize="14sp"
+            android:paddingHorizontal="16dp"
+            android:textColor="#3F464F" />
+
+        <!-- Info Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginHorizontal="20dp"
+            android:orientation="vertical">
+
+            <!-- Invoice -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="#3F464F"
+                    android:fontFamily="@font/din_next_lt_pro"
+                    android:text="Invoice Number"
+                    />
+
+                <TextView
+                    android:id="@+id/tvInvoiceNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="-"
+                    android:fontFamily="@font/din_next_lt_pro"
+                    android:textSize="14sp"
+                    android:textColor="#3F464F"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imgCopy"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/ic_copy"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="#3F464F"
+                    android:fontFamily="@font/din_next_lt_pro"
+                    android:text="Checkout Date"
+                    />
+
+                <TextView
+                    android:id="@+id/checkoutDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="-"
+                    android:fontFamily="@font/din_next_lt_pro"
+                    android:textSize="14sp"
+                    android:textColor="#3F464F"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Total Payment -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Payment"
+                    android:fontFamily="@font/din_next_lt_pro"
+                    android:textSize="14sp"
+                    android:textColor="#3F464F" />
+
+                <TextView
+                    android:id="@+id/tvTotalPayment"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:textSize="14sp"
+                    android:text="IDR -"
+                    android:fontFamily="@font/din_next_lt_pro"
+                    android:textColor="#CD1E15"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Button -->
+        <Button
+            android:id="@+id/btnRetry"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#E1251B"
+            android:fontFamily="@font/din_next_lt_pro"
+            android:text="Change Payment Method"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:layout_marginHorizontal="20dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/bg_dash_line"
+                android:layout_marginVertical="12dp"/>
+
+            <!-- Powered by -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="20dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Powered by "
+                    android:fontFamily="@font/din_next_lt_pro"
+                    android:textColor="#757575"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:src="@drawable/ic_doku_logo" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

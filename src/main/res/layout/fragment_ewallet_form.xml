@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:paddingHorizontal="16dp"
+    tools:context=".ui.ewallet.EwalletFormFragment">
+
+    <!-- HOW TO PAY DROPDOWN -->
+    <LinearLayout
+        android:id="@+id/layoutHowToPay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <!-- Label -->
+                <TextView
+                    android:id="@+id/tvPhoneLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone Number"
+                    android:fontFamily="@font/din_next_lt_pro"
+                    android:textSize="14sp"
+                    android:textColor="#2C333C"
+                    android:layout_marginBottom="8dp" />
+
+                <!-- Label -->
+                <TextView
+                    android:id="@+id/requiredTag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" *"
+                    android:fontFamily="@font/din_next_lt_pro"
+                    android:textSize="14sp"
+                    android:textColor="#E1251B"
+                    android:visibility="gone"
+                    android:layout_marginBottom="8dp" />
+            </LinearLayout>
+
+            <!-- Input -->
+            <EditText
+                android:id="@+id/etPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Input phone number"
+                android:fontFamily="@font/din_next_lt_pro"
+                android:inputType="phone"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textSize="14sp"
+                android:background="@drawable/bg_edit_text"
+                android:textColor="#000000"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnToggleHowTo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/bg_how_to_pay"
+            android:layout_marginTop="12dp"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="How To Pay"
+                android:fontFamily="@font/din_next_lt_pro"
+                android:textColor="#2C333C"
+                android:textFontWeight="500"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/icChevron"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_chevron_down" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

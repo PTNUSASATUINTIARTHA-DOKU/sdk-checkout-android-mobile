@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_with_stroke"
+    tools:context=".ui.qris.QrisHowToPay">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="How To Pay"
+                android:fontFamily="@font/din_next_lt_pro"
+                android:textColor="#212832"
+                android:textFontWeight="500"
+                android:textSize="16sp"/>
+
+            <ImageView
+                android:id="@+id/btnClose"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_close"
+                />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E0E0E0" />
+
+        <!-- Hidden content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_margin="12dp"
+            android:background="@drawable/bg_with_stroke">
+
+            <TextView
+                android:id="@+id/tvTitleHowToPay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="QR Code"
+                android:fontFamily="@font/din_next_lt_pro"
+                android:textColor="#2C333C"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_marginTop="12dp"
+                android:id="@+id/tvHowToContent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/din_next_lt_pro"
+                android:text="1. Scan QR Code or download it first.\n2. Make sure the amount to pay already correct.\n3. After done payment, click “I Have Paid” button to check the payment status."
+                android:textColor="#3F464F"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/bg_dash_line"
+                android:layout_marginVertical="12dp"/>
+
+            <!-- Powered by -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Powered by "
+                    android:fontFamily="@font/din_next_lt_pro"
+                    android:textColor="#757575"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:src="@drawable/ic_doku_logo" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

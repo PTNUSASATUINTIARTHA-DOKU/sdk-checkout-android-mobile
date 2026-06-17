@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/bg_with_stroke">
+
+    <TextView
+        android:background="@drawable/bg_rounded_text"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvStep"
+        android:textSize="14sp"
+        android:text="-"
+        android:lineHeight="28dp"
+        android:fontFamily="@font/din_next_lt_pro"
+        android:textColor="#3F464F"
+        android:textFontWeight="400" />
+
+</FrameLayout>

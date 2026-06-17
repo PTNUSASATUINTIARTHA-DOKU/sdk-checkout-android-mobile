@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingVertical="16dp"
+    android:paddingHorizontal="12dp"
+    android:clickable="false"
+    android:background="@drawable/bg_how_to_pay"
+    android:focusable="false">
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/din_next_lt_pro"
+        android:text="Payment Name"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textFontWeight="500"
+        android:textColor="#212832" />
+
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/ic_arrow_right"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:src="@drawable/ic_chevron_down_img"
+        app:tint="#9E9E9E" />
+
+</LinearLayout>

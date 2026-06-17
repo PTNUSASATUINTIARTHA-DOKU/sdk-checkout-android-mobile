@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.general.AmountDetailFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="16dp"
+            android:paddingHorizontal="16dp">
+
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Item List"
+                android:fontFamily="@font/dinnextltpro_medium"
+                android:layout_weight="2"
+                android:layout_gravity="center_vertical"
+                android:textColor="#212832"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/btnClose"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_close"
+                android:layout_gravity="center_vertical"
+                app:tint="#808080" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E5E7EB" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:id="@+id/orderHiddenSection"
+            android:visibility="visible"
+            android:maxHeight="250dp"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="12dp"
+                    android:id="@+id/itemSection"
+                    android:orientation="vertical"/>
+                <!--            <LinearLayout-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:id="@+id/itemSection"-->
+                <!--                android:orientation="horizontal"-->
+                <!--                android:layout_marginVertical="12dp">-->
+
+                <!--                <LinearLayout-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:orientation="vertical"-->
+                <!--                    android:layout_gravity="center_vertical">-->
+                <!--                    <TextView-->
+                <!--                        android:id="@+id/tvItemName"-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:textSize="14sp"-->
+                <!--                        android:textColor="#3F464F"-->
+                <!--                        android:textStyle="bold"-->
+                <!--                        android:text="-"-->
+                <!--                        />-->
+                <!--                    <TextView-->
+                <!--                        android:id="@+id/tvItemQty"-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:textSize="14sp"-->
+                <!--                        android:textColor="#3F464F"-->
+                <!--                        android:text="-"-->
+                <!--                        />-->
+                <!--                </LinearLayout>-->
+
+                <!--                <TextView-->
+                <!--                    android:layout_gravity="center_vertical"-->
+                <!--                    android:id="@+id/tvItemPrice"-->
+                <!--                    android:layout_width="0dp"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_weight="1"-->
+                <!--                    android:gravity="end"-->
+                <!--                    android:text="-"-->
+                <!--                    android:layout_marginEnd="4dp"-->
+                <!--                    android:textSize="14sp"-->
+                <!--                    android:textColor="#3F464F"-->
+                <!--                    android:textStyle="bold" />-->
+                <!--            </LinearLayout>-->
+            </LinearLayout>
+        </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="12dp"
+            android:background="#E5E7EB"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#2C333C"
+                android:textStyle="bold"
+                android:text="Subtotal"
+                android:fontFamily="@font/dinnextltpro_regular"
+                />
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:id="@+id/tvSubtotal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="-"
+                android:fontFamily="@font/dinnextltpro_regular"
+                android:layout_marginEnd="4dp"
+                android:textSize="14sp"
+                android:textColor="#545B65"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="12dp"
+                android:background="#E5E7EB"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="4dp"
+            android:paddingHorizontal="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Payment"
+                android:fontFamily="@font/dinnextltpro_medium"
+                android:textSize="16sp"
+                android:textColor="#2C333C" />
+
+            <TextView
+                android:id="@+id/tvTotalAmountPayment"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:textSize="16sp"
+                android:text="IDR -"
+                android:fontFamily="@font/dinnextltpro_medium"
+                android:textColor="#E1251B" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/bg_dash_line"
+            android:layout_marginVertical="12dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="16dp">
+
+
+
+            <!-- Powered by -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Powered by "
+                    android:fontFamily="@font/din_next_lt_pro"
+                    android:textColor="#757575"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:src="@drawable/ic_doku_logo" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
