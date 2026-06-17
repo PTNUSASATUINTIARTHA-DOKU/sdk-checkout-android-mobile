@@ -407,7 +407,7 @@ class NotificationsFragment : Fragment() {
             )
             val requestId = UUID.randomUUID().toString()
             val timestamp = Helper().getIsoTimestamp()
-            val clientId = "BRN-0203-1751522786973"
+            val clientId = "YOUR_CLIENT_ID"
             val requestTarget = "/checkout/v1/payment"
             val gson = Gson()
             val jsonBody = gson.toJson(checkoutRequest)
@@ -417,7 +417,7 @@ class NotificationsFragment : Fragment() {
                 timestamp,
                 requestTarget,
                 jsonBody,
-                "SK-4n36N2mjsalmLmYm8Jyg"
+                "YOUR_SECRET_KEY"
             )
             val sheet = com.doku.sdkcheckoutandroid.PaymentBottomSheet.newInstance(
                 clientId = clientId,
