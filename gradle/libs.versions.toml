@@ -1,6 +1,6 @@
 [versions]
 # Define versions here
-agp = "8.3.0"
+agp = "8.4.0"
 kotlin = "1.9.23"
 coreKtx = "1.12.0"
 appcompat = "1.6.1"
