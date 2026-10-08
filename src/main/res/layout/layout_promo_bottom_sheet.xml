@@ -118,9 +118,9 @@
             android:textColor="#757575" />
 
         <ImageView
-            android:layout_width="12dp"
-            android:layout_height="16dp"
-            android:src="@drawable/ic_doku_logo" />
+            android:layout_width="64dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_doku_antom" />
     </LinearLayout>
 
 </LinearLayout>
