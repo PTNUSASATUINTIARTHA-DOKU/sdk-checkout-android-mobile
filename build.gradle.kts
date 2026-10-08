@@ -86,7 +86,7 @@ afterEvaluate {
             register<MavenPublication>("release") {
                 groupId = "com.doku.sdk-checkout"
                 artifactId = "doku-checkout"
-                version = "1.0.0"
+                version = "1.0.1"
 
                 // Mengambil komponen binary (.aar) yang dihasilkan oleh Android Studio
                 from(components["release"])
