@@ -1,6 +1,6 @@
 # DOKUCheckout Android SDK
 
-DOKU Checkout SDK provides a seamless payment integration for iOS merchant applications, supporting various payment channels including **Cards**, **Virtual Accounts (Bank Transfer)**, **E-Wallet**, **QRIS**, **Convenience Stores**, and **Paylater**.
+DOKU Checkout SDK provides a seamless payment integration for iOS merchant applications, supporting various payment channels including **Cards**, **Virtual Accounts (Bank Transfer)**, **E-Wallet**, **QRIS**, and **Convenience Stores**.
 
 ## Requirements
 
@@ -489,7 +489,6 @@ class NotificationsFragment : Fragment() {
 | **E-Wallet** | OVO, DANA, ShopeePay, LinkAja, and more |
 | **QRIS** | QRIS standard supported across e-wallets and banks |
 | **Convenience Store** | Alfamart, Indomaret |
-| **Paylater** | Akulaku, Kredivo, and more |
 
 ## License
 
